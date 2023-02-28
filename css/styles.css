@@ -1,0 +1,203 @@
+/* font-family: 'Roboto', sans-serif; */
+body{
+    margin: 0; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #FFF;
+    color: black ;
+    height: 7000px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.header__info{
+    display: flex;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav__link{
+    text-decoration: none;
+    color: #B83B5D;
+    margin-left: 50px;
+    opacity: 0.9;
+    transition: opacity 0.1s linear;
+}
+.phone__logo{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+.red--link{
+    padding: 15px 7px;
+    border-radius: 10px;
+    background-color: #B83B5D;
+    font-size: 12px;
+    opacity: 1;
+    color:#FFF;
+    text-transform: uppercase;
+}
+.header__number{
+    font-weight: bold;
+    font-family: 'Sofia Sans', sans-serif;
+    cursor: pointer;
+}
+.intro{
+    padding-top: 10px;
+    background-image: url('../assets/truck.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+.company{
+    margin-top: 250px;
+}
+.company__title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #B83B5D;
+}
+.company__line{
+    margin-top: 20px;
+    border-bottom: 2px solid #B83B5D;
+    width: 300px;
+}
+.company__text__logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.company__text{
+    text-align: justify;
+    width: 600px;
+    font-weight: lighter;
+    font-size: 28px;
+}
+.company__logo{
+    border-bottom: 5px solid #B83B5D;
+    margin-top: 30px;
+}
+.KazEuroLog__red{
+    color: #B83B5D;
+    font-weight: bold;
+}
+.goal{
+    margin-top: 300px;
+}
+.goal__inner{
+    margin-top: 50px;
+    height: 800px;
+    display: block;
+    position: relative;
+}
+.goal__inner::after{
+    background-image: url('../assets/scania.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.goal__body{
+    display: block;
+    text-align: center;
+}
+.goal__inner__check{
+    margin-top: 170px;
+}
+.goal__check{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.goal__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goal__text{
+    margin-left: 140px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.details{
+    margin-top: 250px;
+}
+.details__body{
+    margin-top: 60px;
+}
+.details--title{
+    font-size: 35px;
+}
+.details__text{
+    text-align: justify;
+    font-size: 23px;
+    margin-top: 32px;   
+    font-weight: 300;
+}
+.details__line{
+    margin-top: 60px;
+    width: 300px;
+    border-bottom: 5px solid #B83B5D;
+}
+.details__advantages{
+    font-size: 18px;
+}
+.directions{
+    margin-top: 250px;
+}
+.directions__body{
+    margin-top: 50px ;
+    height: 800px;
+    background-color: #f7f8f9;
+}
+.directions__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.directions__inner__types{
+    padding-top: 100px;
+}
+.directions__types{
+    font-size: 25px;
+    /* font-family: 'Poppins', sans-serif;  */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    word-spacing: 10px;
+}
