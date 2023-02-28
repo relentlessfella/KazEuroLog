@@ -43,9 +43,10 @@
               <div class="number">+77071138881</div>
             </div>
             <nav class="nav">
-              <a class="nav__link" href="#">О нас</a>
-              <a class="nav__link" href="#">Контакты</a>
-              <a class="nav__link red--link" href="#">Оставить заявку</a>
+              <a class="nav__link" href="#about">О компании</a>
+              <a class="nav__link" href="#contact">Контакты</a>
+              <a class="nav__link" href="#detailed">Подробнее</a>
+              <!-- <a class="nav__link red--link" href="#">Оставить заявку</a> -->
             </nav>
           </div>
         </div>
@@ -61,7 +62,7 @@
         <div class="company__inner">
           <div class="company__title__line">
             <div class="company__line">
-              <div class="company__title">О компании</div>
+              <div class="company__title" id="about">О компании</div>
               <div class="company__line"></div>
             </div>
           </div>
@@ -120,7 +121,7 @@
       <div class="container">
         <div class="company__title__line">
           <div class="company__line">
-            <div class="company__title details--title">Подробнее о нас</div>
+            <div class="company__title details--title" id="detailed">Подробнее о нас</div>
             <div class="company__line"></div>
           </div>
         </div>
@@ -197,19 +198,41 @@
       </div>
       <div class="directions__body">
         <div class="container">
+          <!-- <p class="directions__title">Нашими наиболее популярными<br />направлениями являются:</p> -->
           <div class="directions__inner__types">
-            <p class="directions__title">
-              Нашими наиболее популярными<br />направлениями являются:
-            </p>
-            <p class="directions__types">Казахстан&emsp;-&emsp;Россия</p>
-            <p class="directions__types">Россия&emsp;-&emsp;Казахстан</p>
-            <p class="directions__types">Казахстан&emsp;-&emsp;Европа</p>
-            <p class="directions__types">Европа&emsp;-&emsp;Казахстан</p>
-            <p class="directions__types">Казахстан&emsp;-&emsp;Китай</p>
-            <p class="directions__types">Китай&emsp;-&emsp;Казахстан</p>
+            <p class="directions__types">Казахстан&emsp;&emsp;-&emsp;&emsp;Россия</p>
+            <p class="directions__types">Россия&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
+            <p class="directions__types">Казахстан&emsp;&emsp;-&emsp;&emsp;Европа</p>
+            <p class="directions__types">Европа&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
+            <p class="directions__types">Казахстан&emsp;-&emsp;&emsp;&emsp;Китай</p>
+            <p class="directions__types">Китай&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contacts -->
+
+    <div class="contacts" id="contact">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="company__title__line">
+            <div class="company__line">
+              <div class="company__title details--title">Контакты</div>
+              <div class="company__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      window.location.replace('#');
+      if (typeof window.history.replaceState == 'function') {
+        history.replaceState({}, '', window.location.href.slice(0, -1));
+        window.scrollTo(0, 0);
+      }
+    </script>
   </body>
 </html>

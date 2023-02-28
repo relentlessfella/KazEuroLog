@@ -1,4 +1,7 @@
 /* font-family: 'Roboto', sans-serif; */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0; 
     font-family: 'Roboto', sans-serif;
@@ -87,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
     color: #B83B5D;
 }
 .company__line{
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 2px solid #B83B5D;
     width: 300px;
 }
@@ -183,21 +186,26 @@ h1,h2,h3,h4,h5,h6{
 }
 .directions__body{
     margin-top: 50px ;
-    height: 800px;
+    height: 670px;
     background-color: #f7f8f9;
 }
-.directions__title{
+/* .directions__title{
+    padding-top: 50px;
     font-size: 20px;
-    font-weight: 500;
-}
+    font-weight: 400;
+} */
 .directions__inner__types{
-    padding-top: 100px;
+    padding-top: 80px;
+    text-align: center;
 }
 .directions__types{
-    font-size: 25px;
+    font-size: 35px;
     /* font-family: 'Poppins', sans-serif;  */
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     word-spacing: 10px;
+}
+.contacts{
+    margin-top: 160px;
 }
