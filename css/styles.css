@@ -554,4 +554,69 @@ h1,h2,h3,h4,h5,h6{
     .nav__link{
         font-size: 14px;
     }
+    .header__logo img{
+        width: 95px;
+        height: 50px;
+    }
+    .header{
+        height: 80px;
+    }
 }
+@media screen and (max-width:400px) {
+    .company__logo{
+        height: 140px;
+        width: 300px;
+    }
+    .directions__inner__types{
+        width: 100%;
+    }
+    .contact__info{
+        height: 420px;
+    }
+    .contacts__info__inner{
+        height: 407px;
+    }
+}
+@media screen and (max-width:400px) {
+    .contact__info{
+        height: 440px;
+    }
+    .contacts__info__inner{
+        height: 427px;
+    }
+    .info__list p {
+        font-size: 16px;
+        margin: 0;
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width:355px) {
+    .navfirst--child {
+        display: none;
+    }
+    .company__logo{
+        height: 100px;
+        width: 250px;
+    }
+    .inner__types{
+        font-size: 18px;
+    }
+    .infolast--child{
+        display: block;
+    }
+}
+@media screen and (max-width:355px) {
+    .contact__info{
+        height: 500px;
+    }
+    .contacts__info__inner{
+        height: 486px;
+    }
+    .company__title{
+        font-size: 30px;
+    }
+    .company__line{
+        width: 200px;
+    }
+}
+
