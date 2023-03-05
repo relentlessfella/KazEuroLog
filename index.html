@@ -17,18 +17,19 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700&display=swap"
       rel="stylesheet" />
-
-    <!-- font-family: 'Poppins', sans-serif; -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;1,500;1,800&display=swap"
-      rel="stylesheet" /> -->
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="container__header">
         <div class="header__inner">
           <div class="header__logo">
             <img src="assets/logo.jpeg" alt="" width="180" height="81" />
@@ -39,20 +40,20 @@
               <img src="assets/telephone.png" alt="" width="30" height="30" />
             </div>
             <div class="header__number">
-              <div class="number">+77071138881</div>
-              <div class="number">+77071138881</div>
+              <div class="number">+77074445500</div>
+              <div class="number">+77074445500</div>
             </div>
             <nav class="nav">
-              <a class="nav__link" href="#about">О компании</a>
-              <a class="nav__link" href="#contact">Контакты</a>
+              <a class="nav__link" href="#about">О&nbsp;компании</a>
               <a class="nav__link" href="#detailed">Подробнее</a>
-              <!-- <a class="nav__link red--link" href="#">Оставить заявку</a> -->
+              <a class="nav__link" href="#contact">Контакты</a>
             </nav>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- <a class="nav__link red--link" href="#">Оставить заявку</a> -->
     <!-- Intro -->
     <div class="intro"></div>
 
@@ -200,12 +201,48 @@
         <div class="container">
           <!-- <p class="directions__title">Нашими наиболее популярными<br />направлениями являются:</p> -->
           <div class="directions__inner__types">
-            <p class="directions__types">Казахстан&emsp;&emsp;-&emsp;&emsp;Россия</p>
+            <div class="inner__types">
+              <p>Казахстан</p>
+              &emsp;
+              <img
+                class="inner__img"
+                src="assets/double-arrow-svgrepo-com.svg"
+                alt="My Happy SVG"
+                height="50"
+                width="50" />
+              &emsp;
+              <p>Россия</p>
+            </div>
+            <div class="inner__types">
+              <p>Казахстан</p>
+              &emsp;
+              <img
+                class="inner__img"
+                src="assets/double-arrow-svgrepo-com.svg"
+                alt="My Happy SVG"
+                height="50"
+                width="50" />
+              &emsp;
+              <p>Европа</p>
+            </div>
+            <div class="inner__types">
+              <p>Казахстан</p>
+              &emsp;
+              <img
+                class="inner__img"
+                src="assets/double-arrow-svgrepo-com.svg"
+                alt="My Happy SVG"
+                height="50"
+                width="50" />
+              &emsp;
+              <p>Китай</p>
+            </div>
+            <!-- <p class="directions__types">Казахстан&emsp;&emsp;-&emsp;&emsp;Россия</p>
             <p class="directions__types">Россия&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
             <p class="directions__types">Казахстан&emsp;&emsp;-&emsp;&emsp;Европа</p>
             <p class="directions__types">Европа&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
             <p class="directions__types">Казахстан&emsp;-&emsp;&emsp;&emsp;Китай</p>
-            <p class="directions__types">Китай&emsp;&emsp;-&emsp;&emsp;Казахстан</p>
+            <p class="directions__types">Китай&emsp;&emsp;-&emsp;&emsp;Казахстан</p> -->
           </div>
         </div>
       </div>
@@ -214,24 +251,66 @@
     <!-- Contacts -->
 
     <div class="contacts" id="contact">
-      <div class="container">
-        <div class="contacts__inner">
-          <div class="company__title__line">
+      <div class="contacts__inner">
+        <div class="company__title__line">
+          <div class="container">
             <div class="company__line">
               <div class="company__title details--title">Контакты</div>
               <div class="company__line"></div>
             </div>
           </div>
         </div>
+        <div class="container__contacts">
+          <div class="contact__info">
+            <div class="contacts__info__inner">
+              <div class="info__table">
+                <div class="info__list list--item1">Наша контактная информация:</div>
+                <div class="info__list list--item2">TOO "KazEuroLogistics"</div>
+                <div class="info__list">
+                  <div class="info__property">Номер:&nbsp;</div>
+                  +77074445500
+                </div>
+                <div class="info__list">
+                  <div class="info__property">Индекс:&nbsp;</div>
+                  010000, Астана, Казахстан
+                </div>
+                <div class="info__list">
+                  <div class="info__property">Адрес:&nbsp;</div>
+                  <a href="https://go.2gis.com/cy72kj" target="_blank"> Улица Жошы Хан 6, кв 145</a>
+                </div>
+                <div class="info__list">
+                  <div class="info__property">Почта:&nbsp;</div>
+                  info@kazeurologistics.com
+                </div>
+              </div>
+            </div>
+            <div class="contacts__location"></div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <div class="footer">
+      <div class="container">
+        <div class="footer__inner">TOO KazEuroLogistics</div>
+      </div>
+    </div>
     <!-- Scripts -->
     <script>
       window.location.replace('#');
       if (typeof window.history.replaceState == 'function') {
         history.replaceState({}, '', window.location.href.slice(0, -1));
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
+      }
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myTopnav');
+        if (x.className === 'topnav') {
+          x.className += ' responsive';
+        } else {
+          x.className = 'topnav';
+        }
       }
     </script>
   </body>
