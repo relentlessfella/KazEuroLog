@@ -283,6 +283,9 @@ h1,h2,h3,h4,h5,h6{
     /* color: #808080; */
     color: #FFF;
 }
+.info__list p {
+    margin: 0;
+}
 .info__property{
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -393,7 +396,7 @@ h1,h2,h3,h4,h5,h6{
         margin-right:auto;
         margin-left: auto; 
         width: 70%;
-        padding-top: 140px;
+        padding-top: 65px;
     }
     .inner__types{
         display: flex;
@@ -495,7 +498,13 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 @media screen and (max-width:570px) {
-    .header__number{
+    .header__info{
+        display: block;
+    }
+    .number{
+        width: 150px;
+    }
+    .numlast--child{
         display: none;
     }
     .company__logo{
@@ -561,6 +570,37 @@ h1,h2,h3,h4,h5,h6{
     .header{
         height: 80px;
     }
+    .footer{
+        margin-top: 120px;
+        height: 80px;
+    }
+    .footer__inner{
+        padding-top: 30px;
+    }
+    .contact__info{
+        height: 410px;
+    }
+    .contacts__info__inner{
+        height: 397px;
+    }
+    .intro{
+        height: 500px;
+    }
+    .goal__inner{
+        height: 550px;
+    }
+    .goal__inner__check{
+        margin-top: 65px;
+    }
+    .directions__body{
+        height: 510px;
+    }
+    .directions__inner__types{
+        padding-top: 1px;
+    }
+    body{
+        height:5637px
+    }
 }
 @media screen and (max-width:400px) {
     .company__logo{
@@ -619,4 +659,11 @@ h1,h2,h3,h4,h5,h6{
         width: 200px;
     }
 }
-
+@media screen and (max-width:320px) {
+    .company__line{
+        width: 150px;
+    }
+    .company__title{
+        font-size: 23px;
+    }
+}
