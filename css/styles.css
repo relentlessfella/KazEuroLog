@@ -59,6 +59,9 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 15px;
     margin-bottom: 7px;
 }
+.phone__logo img{
+    margin-top: 5px;
+}
 .red--link{
     padding: 15px 7px;
     border-radius: 10px;
@@ -69,6 +72,8 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 .header__number{
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-family: 'Sofia Sans', sans-serif;
     cursor: pointer;
@@ -162,7 +167,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 300;
 }
 .details{
-    margin-top: 250px;
+    margin-top: 200px;
 }
 .details__body{
     margin-top: 60px;
@@ -176,12 +181,16 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 32px;   
     font-weight: 300;
 }
-.details__line{
+.company__title{
     margin-top: 60px;
+
+}
+.details__line{
     width: 300px;
     border-bottom: 5px solid #B83B5D;
 }
 .details__advantages{
+    margin-top: 60px;
     font-size: 18px;
 }
 .directions{
@@ -217,7 +226,7 @@ h1,h2,h3,h4,h5,h6{
     margin-right:auto;
     margin-left: auto; 
     width: 35%;
-    padding-top: 140px;
+    padding-top: 50px;
 }
 .inner__types {
     display: flex;
@@ -328,6 +337,10 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
     padding: 0 30px;
 }
+.advantages--title{
+    margin-top: 200px;
+    font-size: 30px;
+}
 @media screen and (max-width: 1200px){
     .container{
         padding-left: 100px;
@@ -356,7 +369,7 @@ h1,h2,h3,h4,h5,h6{
         margin-right:auto;
         margin-left: auto; 
         width: 55%;
-        padding-top: 140px;
+        padding-top: 50px;
     }
 }
 @media screen and (max-width:930px) {
@@ -601,6 +614,15 @@ h1,h2,h3,h4,h5,h6{
     body{
         height:5637px
     }
+    .company__title{
+        font-size: 30px;
+    }
+    .details__advantages{
+        font-size: 16px;
+    }
+    .advantages--title{
+        margin-top: 150px;
+    }
 }
 @media screen and (max-width:400px) {
     .company__logo{
@@ -651,9 +673,6 @@ h1,h2,h3,h4,h5,h6{
     }
     .contacts__info__inner{
         height: 486px;
-    }
-    .company__title{
-        font-size: 30px;
     }
     .company__line{
         width: 200px;
