@@ -78,6 +78,9 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Sofia Sans', sans-serif;
     cursor: pointer;
 }
+.number{
+    color: #B83B5D;
+}
 .intro{
     padding-top: 10px;
     background-image: url('../assets/truck.jpg');
@@ -557,6 +560,11 @@ h1,h2,h3,h4,h5,h6{
     .nav__link{
         margin-left: 10px;
     }
+    .company__text{
+        text-align:start;
+        word-spacing: 5px;
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:440px) {
     .container{
@@ -639,6 +647,12 @@ h1,h2,h3,h4,h5,h6{
         height: 407px;
     }
 }
+@media screen and (max-width:415px) {
+    .details__text{
+        text-align: start;
+        font-size: 15px;
+    }
+}
 @media screen and (max-width:400px) {
     .contact__info{
         height: 440px;
@@ -650,6 +664,11 @@ h1,h2,h3,h4,h5,h6{
         font-size: 16px;
         margin: 0;
         padding-top: 5px;
+    }
+}
+@media screen and (max-width:360px) {
+    .company__text{
+        font-size: 16px;
     }
 }
 @media screen and (max-width:355px) {
@@ -676,6 +695,11 @@ h1,h2,h3,h4,h5,h6{
     }
     .company__line{
         width: 200px;
+    }
+}
+@media screen and (max-width:325px) {
+    .company__text{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:320px) {
