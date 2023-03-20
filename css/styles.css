@@ -720,18 +720,25 @@ h1,h2,h3,h4,h5,h6{
         font-size: 17px;
     }
     .info__table{
-        padding-top: 40px;
+        padding-top: 10px;
+    }
+    .contacts__info__inner{
+        height: 440px;
+    }
+    .contact__info{
+        height: 454px;
     }
 }
 @media screen and (max-width:370px) {
     .details__body{
-        margin: 0;
+        margin-top: 45px;
     }
 }
 @media screen and (max-width:360px) {
     .company__text{
         font-size: 16px;
     }
+
 }
 @media screen and (max-width:355px) {
     .navfirst--child {
@@ -762,6 +769,9 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (max-width:335px) {
     .info__table{
         padding-top: 10px;
+    }
+    .details__body{
+        margin: 0;
     }
 }
 @media screen and (max-width:325px) {
