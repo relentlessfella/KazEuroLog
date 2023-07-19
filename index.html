@@ -241,6 +241,54 @@
       </div>
     </div>
 
+    <div class="form">
+      <div class="container">
+        <div class="company__title__line">
+          <div class="company__line">
+            <div class="company__title details--title" id="detailed">Отправить заявку</div>
+            <div class="company__line"></div>
+          </div>
+        </div>
+
+        <div class="form__body">
+          <form action="#" class="form__styles" name="submit-to-google-sheet">
+            <label>Ваша почта:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="example@mail.ru"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Введите корректный адрес электронной почты"
+              required />
+            <label>Ваш номер:</label>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              placeholder="+77777777777"
+              pattern="\+7[0-9]{10}"
+              title="Введите номер в формате +77777777777"
+              required />
+            <label>Место погрузки:</label>
+            <input type="text" id="pickup" name="pickup" placeholder="Астана" required />
+            <label>Место выгрузки:</label>
+            <input type="text" id="delivery" name="delivery" placeholder="Челябинск" required />
+            <label>Вес груза:</label>
+            <input
+              type="text"
+              id="weight"
+              name="weight"
+              placeholder="10 тонн"
+              title="Введите корректный вес груза (например, 10 тонн)"
+              required />
+            <button type="submit">Отправить</button>
+            <span id="sendText"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- directions -->
 
     <div class="directions">
@@ -374,6 +422,22 @@
           x.className = 'topnav';
         }
       }
+    </script>
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwfK50gusJFiKetNjfx3qp4DLPmonE9-owU5HS12AzXM2scpqVuKfzemxNZDWN6qkkn/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const sendText = document.getElementById('sendText');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            sendText.innerHTML = 'Ваша заявка принята!';
+            form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
     </script>
   </body>
 </html>
