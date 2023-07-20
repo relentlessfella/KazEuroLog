@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* font-family: 'Roboto', sans-serif; */
 html{
     scroll-behavior: smooth;
@@ -13,7 +20,8 @@ body{
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -32,18 +40,30 @@ h1,h2,h3,h4,h5,h6{
     z-index: 1000;
 }
 .header__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0px;
 }
 .header__info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
 }
 .nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
 }
 .nav__link{
@@ -51,11 +71,17 @@ h1,h2,h3,h4,h5,h6{
     color: #B83B5D;
     margin-left: 50px;
     opacity: 0.9;
+    -webkit-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
     transition: opacity 0.1s linear;
 }
 .phone__logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 15px;
     margin-bottom: 7px;
 }
@@ -72,8 +98,12 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 .header__number{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: bold;
     font-family: 'Sofia Sans', sans-serif;
     cursor: pointer;
@@ -106,8 +136,12 @@ h1,h2,h3,h4,h5,h6{
     width: 300px;
 }
 .company__text__logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 60px;
 }
 .company__text{
@@ -155,14 +189,24 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 60px;
 }
 .goal__check{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 60px;
 }
 .goal__body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .goal__text{
     margin-left: 140px;
@@ -232,6 +276,8 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 50px;
 }
 .inner__types {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 0;
     font-family: 'Nunito', sans-serif;
@@ -272,7 +318,8 @@ h1,h2,h3,h4,h5,h6{
     padding: 25px 0px;
     margin-top: 50px;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 12%);;
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 12%);
+            box-shadow: 0 10px 20px rgb(0 0 0 / 12%);;
 }
 .contacts__info__inner{
     border-radius: 20px;
@@ -287,12 +334,16 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .info__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;  
     font-weight: 300;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #FFF;
 }
 .info__list p {
@@ -353,11 +404,16 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 200px;
 }
 .form__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 50px; /* Adjust the top margin for better spacing on mobile */
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px 10px; /* Reduce the padding for better spacing on mobile */
   }
   
@@ -368,6 +424,8 @@ h1,h2,h3,h4,h5,h6{
   }
   
 .form__styles label{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;  
 }
 .form__styles input {
@@ -384,6 +442,8 @@ h1,h2,h3,h4,h5,h6{
 .form__styles input:focus{
     outline: none;
     background-color: #eaeaea;
+    -webkit-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
     transition: linear 0.3s;
 }
 /* Add these styles to the existing .form__styles class */
@@ -397,6 +457,8 @@ h1,h2,h3,h4,h5,h6{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
   
@@ -504,6 +566,8 @@ h1,h2,h3,h4,h5,h6{
         padding-top: 65px;
     }
     .inner__types{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 0;
         font-family: 'Nunito', sans-serif;
